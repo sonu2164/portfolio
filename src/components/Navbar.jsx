@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import BadgeModal from "./Badge";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { logo, menu, close, leetcode100, leet50, leetjuly } from "../assets";
 
 const lightThemeColor = "#915eff"; // Your desired text color for the light theme
 const lightThemeShadowColor = "rgba(145, 94, 255, 0.3)"; // Adjust the shadow color's alpha (opacity) as needed for light theme
@@ -41,9 +41,29 @@ const onuStyle = {
 
 };
 
+const badges = [
+  { src: leetcode100, alt: 'leet100' },
+  { src: leet50, alt: 'leet50' },
+  { src: leetjuly, alt: 'leetjuly' },
+  // Add more badges as needed
+];
+
+
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false)
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedBadge, setSelectedBadge] = useState(null);
+
+  const handleBadgeClick = (badgeSrc) => {
+    setSelectedBadge(badgeSrc);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+    setSelectedBadge(null);
+  };
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-black/20 `}>
@@ -69,7 +89,23 @@ const Navbar = () => {
             </p>
           </div>
         </Link>
+
+
+
+
         <ul className='list-none hidden sm:flex flex-row gap-10'>
+          {badges.map((badge, index) => (
+            <img
+              key={index}
+              src={badge.src}
+              alt={badge.alt}
+              onClick={() => handleBadgeClick(badge.src)}
+              style={{ cursor: 'pointer', maxWidth: '40px', maxHeight: '100px' }}
+
+            />
+          ))}
+
+
           {navLinks.map((nav) => (
 
             <li key={nav.id}
@@ -123,8 +159,10 @@ const Navbar = () => {
 
         </div>
       </div>
+      <BadgeModal isOpen={modalIsOpen} onClose={closeModal} badgeSrc={selectedBadge} />
     </nav>
   )
 }
 
 export default Navbar;
+

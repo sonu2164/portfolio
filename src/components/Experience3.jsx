@@ -12,7 +12,7 @@ const Experience3 = () => {
         <div className='duration-300 delay-75 flex justify-center hover:mt-1 mt-6'>
 
           <div className='flex justify-center green-pink-gradient rounded-md    w-1/4'>
-            <a href='https://drive.google.com/file/d/1kPK1M_IOWosGk-Xz31vb9M3vtk1HvMZe/view?usp=sharing' className='transition ease-in delay-50 text-center  duration-300 bg-tertiary w-full  rounded-md m-[1px] hover:animate-bounce hover:mt-1 p-3 font-bold' >DOWNLOAD NOW </a>
+            <a href='https://drive.google.com/file/d/1kPK1M_IOWosGk-Xz31vb9M3vtk1HvMZe/view?usp=sharing' className='transition ease-in delay-50 text-center  duration-300 bg-tertiary w-full  rounded-md m-[1px] hover:animate-bounce hover:mt-1 p-3 font-bold' >My Resume </a>
 
 
 

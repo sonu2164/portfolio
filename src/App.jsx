@@ -11,7 +11,7 @@ function App() {
 
     <BrowserRouter>
 
-      <div className='relative z-0 bg-primary'>
+      <div className='relative z-0 bg-primary m-0'>
 
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
 
@@ -24,8 +24,9 @@ function App() {
 
         <WhatDone className="m-10" />
         <Tech />
-        <Works />
-
+        <div className='m-4'>
+          <Works />
+        </div>
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />

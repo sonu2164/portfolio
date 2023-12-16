@@ -1,5 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie';
+
 import animationData1 from '../assets/lottie/animation_ln2hx9ej.json';
 import animationData2 from '../assets/lottie/animation_ln2hxi7q.json';
 import animationData3 from '../assets/lottie/animation_ln2hxojr.json';
@@ -124,7 +125,7 @@ const Hero = () => {
                     {/* <button className='transition ease-in delay-50  duration-300 bg-tertiary w-full  rounded-md m-[1px] hover:color-tertiary  p-3 font-bold '>DOWNLOAD RESUME</button>
                      */}
 
-                    <a href='https://drive.google.com/file/d/1kPK1M_IOWosGk-Xz31vb9M3vtk1HvMZe/view?usp=sharing' className='transition ease-in delay-50  duration-300 bg-tertiary w-full  rounded-md m-[1px] hover:animate-bounce  p-3 font-bold text-center' >DOWNLOAD NOW </a>
+                    <a href='https://drive.google.com/file/d/1kPK1M_IOWosGk-Xz31vb9M3vtk1HvMZe/view?usp=sharing' className='transition ease-in delay-50  duration-300 bg-tertiary w-full  rounded-md m-[1px] hover:animate-bounce  p-3 font-bold text-center' >My Resume</a>
 
 
 

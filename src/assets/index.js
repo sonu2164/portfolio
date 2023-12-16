@@ -7,6 +7,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -46,10 +47,25 @@ import neon from './neon.jpg'
 import nitkkr from './nitkkr.png'
 import upb from './upb.png'
 
+import leetcode100 from './leetcode100.gif'
+import leetjuly from './leetjuly.gif'
+import leet50 from './leet50.gif'
+import coderush2 from './coderush2.png'
+import mnit from './mnit.jpeg'
+import codingninja from './codingninja.png'
+import udemy from './udemy.jpg'
+
 
 
 
 export {
+  udemy,
+  coderush2,
+  mnit,
+  codingninja,
+  leetcode100,
+  leet50,
+  leetjuly,
   logo,
   nitkkr,
   upb,
